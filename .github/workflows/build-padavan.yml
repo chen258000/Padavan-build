@@ -38,8 +38,8 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        #TNAME: MI-3
-        TNAME: NEWIFI3
+        TNAME: MI-3
+        #TNAME: NEWIFI3
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
