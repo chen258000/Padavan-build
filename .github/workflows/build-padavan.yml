@@ -39,8 +39,8 @@ jobs:
     - name: Build Firmware
       env:
         #TNAME: MI-3
-        #TNAME: NEWIFI3
-        TNAME: RM2100
+        TNAME: NEWIFI3
+        #TNAME: RM2100
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
