@@ -1,11 +1,11 @@
 #修改TNAME: K2P-5.0 中的K2P-5.0为你需要编译的型号，注意名称要与configs/templates/目录下的名字相同
 name: Build Padavan
 
-on: 
+于: 
   release:
     types: [published]
   push:
-    tags:
+    标签:
     - 'v*'
   #  branches: 
   #    - master
@@ -39,8 +39,8 @@ jobs:
     - name: Build Firmware
       env:
         #TNAME: MI-3
-        TNAME: NEWIFI3
-        #TNAME: RM2100
+        #TNAME: NEWIFI3
+        TNAME: RM2100
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
